@@ -40,9 +40,9 @@ Application Features:
      - user 1:
        - UserName: User1@email.com
        - Password: user1@123
-    - user 2:
-      - UserName: User2@email.com
-      - Password: user2@123
+     - user 2:
+       - UserName: User2@email.com
+       - Password: user2@123
 
 # ScreenShots
 
