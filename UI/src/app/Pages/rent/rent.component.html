@@ -1,0 +1,64 @@
+<app-header></app-header>
+<div class="rent">
+    <div>
+        <table >
+            <tbody>
+                <tr>
+                    <td><i class="icon fa-solid fa-route"></i><h4>No Riding Limit</h4></td>
+                    <td><i class="icon fa-solid fa-user-gear"></i><h4>Well Maintained</h4></td>
+                    <td><i class="icon fa-solid fa-credit-card"></i><h4>Secure Payments</h4></td>
+                </tr>
+                <tr>
+                    <td><i class="icon fa-solid fa-handshake-simple"></i><h4>24X7 Service</h4></td>
+                    <td><i class="icon fa-solid fa-user-shield"></i><h4>Safe Driver</h4></td>
+                    <td><i class="icon fa-solid fa-hand-holding-dollar"></i><h4>100% Money Back</h4></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="rentForm">
+      <form #form="ngForm">
+        <div class="diV">
+            <div>
+                <label>Pick date : </label>
+                <input type="date"  name="rentDate"  [(ngModel)]="reqBody.rentDate" />
+            </div>
+            <div>
+                <label>Drop date : </label>
+                <input type="date" name="returnDate" [(ngModel)]="reqBody.returnDate"/>
+            </div>
+        </div>
+        <div class=" btn" >
+            <button  class="check"(click)="checkDates()">Check Availablilty</button>
+        </div>
+      </form>
+    </div>
+    <div class="agreement">
+        <div class="title">
+            <h1>Rent Agreement</h1>
+        </div>
+        <div class="agCard">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequuntur repudiandae perferendis voluptatem voluptas 
+                minima, velit excepturi cum iste? Illum ipsum quam tenetur
+                voluptate nisi nesciunt in autem nulla quisquam expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur repudiandae perferendis voluptatem voluptas
+                minima, velit excepturi cum iste? Illum ipsum quam tenetur
+                voluptate nisi nesciunt in autem nulla quisquam expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur repudiandae perferendis voluptatem voluptas
+                minima, velit excepturi cum iste? Illum ipsum quam tenetur
+                voluptate nisi nesciunt in autem nulla quisquam expedita.
+                
+            </p>
+            <div class="btn" >
+                <button [disabled]="!isValidDates" (click)="postDates()">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
+

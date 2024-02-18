@@ -1,0 +1,112 @@
+
+.rent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+  
+
+}
+table{
+    background-color: #222;
+    border:1px solid blueviolet;
+    border-radius: 10px;
+    margin:20px;
+}
+.icon{
+    font-size: 30px;
+    color:rgb(24, 155, 243)
+}
+tr{
+    display: flex;
+    justify-content: space-around;
+    width:90vw;
+    margin: 20px;
+}
+td{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    margin: 20px;
+    margin-top: 100px;
+    
+   
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+    box-shadow: 0 0 15px #1a3941;
+}
+.diV{
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px;
+   
+    
+   
+}
+.diV>div{
+    margin-left: 25px;
+    border-bottom: 1px solid black;
+   
+
+}
+input{
+    outline:none;
+    border:none;
+   
+}
+h4{
+    color:white;
+}
+
+
+.agreement{
+    width: 70%;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+   
+   
+    box-shadow: 0 0 15px #1a3941;
+    margin-bottom: 10px;
+
+}
+.title{
+    font-family: "Barlow",sans-serif;
+    margin-top: 30px;
+    font-size: 23px;
+}
+.agCard{
+    margin-top: 45px;
+    width: 60%;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    word-spacing: 3px;
+}
+.btn{
+  text-align: center;
+  margin:20px;
+}
+button{
+    border:none;
+    color: white;
+    background-color:rgb(149, 149, 236);
+   
+    height: 25px;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 4px 2px;
+
+}
+
+.check{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+

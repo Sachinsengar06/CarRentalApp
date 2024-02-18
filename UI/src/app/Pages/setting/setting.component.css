@@ -1,0 +1,153 @@
+.setting{
+    display:flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.settingWrapper{
+    flex:9;
+    padding:20px;
+}
+.settingTitle{
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.settingUpdateTitle{
+    font-size: 30px;
+    margin-bottom:20px;
+    color:lightcoral;
+}
+
+.settingForm{
+    display:flex;
+    flex-direction: column;
+}
+.settingPP{
+    display:flex;
+    align-items:center;
+    margin: 10px 0;
+    width: 90vw;
+    justify-content: space-between;
+}
+.settingPP>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.settingPPIcon{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color: lightcoral;
+    color:white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left:10px; 
+    cursor:pointer;
+}
+.settingForm>label{
+    font-size:20px;
+    margin:10px 0;
+}
+.settingForm>input{
+    color:gray;
+    margin:10px 0;
+    height:30px;
+    border:none;
+    border-bottom:1px solid lightgray;
+}
+.settingSubmit{
+    width:150px;
+    align-self: center;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    background-color: teal;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+
+}
+.adminControl{
+    margin-top: 45px;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+table{
+    border:1px solid blue;
+    margin-top: 60px;
+}
+th{
+    border:1px solid red;
+}
+td{
+    text-align: center;
+}
+.imgDiv{
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+img{
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    padding:2px;
+    overflow: hidden;
+    color:white;
+    background-color: burlywood;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 1px;
+    border:none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.myHead{
+    font-size: 35px;
+    color:lightcoral;
+}
+.myHeadT{
+  display: flex;
+  justify-content: center;
+}
+.dates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h5{
+    margin-top: 15px;
+    font-size: 16px;
+    color:rgb(93, 41, 4);
+    font-family:'Josefin Sans',sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+button[disabled] {
+    background-color: #ccc;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+
+.returnReqBtn{
+    float:right;
+    height: 38px;
+}

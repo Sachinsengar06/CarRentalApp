@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    position: fixed;
+    background-color: #FDF5DF;
+    top:0;
+    font-family:'Josefin Sans',sans-serif;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height:37px;
+    z-index: 999;
+}
+.topLeft{
+    display: flex;
+    justify-content: center;
+    flex:3;
+}
+.topCenter{
+    flex:6;
+    display: flex;
+    justify-content: center;
+
+}
+.topRight{
+    flex:3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.topList{
+    display:flex;
+    list-style: none;
+    align-items:center;
+    margin-left: 15px;
+}
+li{
+    margin-left: 25px;
+    font-size:22px;
+    
+}
+.topIcon{
+    font-size:21px;
+    color:#444;
+    margin-left: 8px;
+}
+.link{
+    text-decoration: none;
+    color:inherit;
+}
+.login{
+    font-size: 21px;
+    cursor: pointer;
+}
+.topImg{
+    width: 36px;
+    height:36px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-top: 4px;
+    cursor: pointer;
+}

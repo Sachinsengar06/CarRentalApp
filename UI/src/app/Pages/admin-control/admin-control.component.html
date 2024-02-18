@@ -1,0 +1,30 @@
+<app-header></app-header>
+<div class="adminControl">
+    <div>
+        <button routerLink="/addCar" class="add">Add New Car</button>
+    </div>
+    <table>
+        <thead>
+            <th>Cars</th>
+            <th>Update Button</th>
+            <th>Delete Button</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>
+                    <div class="imgDiv">
+                        <a>
+                            <img [src]="post.carImage" alt="Image">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <button routerLink="/update/{{post.id}}">Edit</button>
+                </td>
+                <td>
+                    <button class="deleteBtn" type="button" (click)="deleteCar(post.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

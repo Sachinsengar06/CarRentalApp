@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="container">
+    <div class="imgDiv">
+
+        <!-- background Image Thar Car -->
+        <img src="https://wallpapercave.com/wp/wp2506451.jpg" alt="">
+    </div>
+
+    <!-- form -->
+    <form [formGroup]="loginForm" class="form" (ngSubmit)="onSubmit()">
+        <h1>Login<i class="carIcon fa-solid fa-car"></i></h1>
+        <div>
+            <i class="inputIcon fa-solid fa-user"></i>
+            <input type="text" id="email" formControlName="email" placeholder="Username" >
+
+            <!-- validation -->
+            <div class="validation" *ngIf="(Email.errors?.['required'] && (Email.dirty || Email.touched))">Email is Required</div>
+            <div class="validation" *ngIf="Email.hasError('email')" >Email is Invalid</div>
+        </div>
+        <div>
+            <i class="inputIcon fa-solid fa-lock"></i>
+            <input type="password" name="password" formControlName="password" placeholder="password" >
+            <div class="validation" *ngIf="(PWD.errors?.['required'] && (PWD.dirty || PWD.touched))">Password is Required</div>
+
+        </div>
+        
+        <button type="submit"  [disabled]="loginForm.invalid" >Login</button>
+    </form>
+</div>

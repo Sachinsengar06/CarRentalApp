@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="topLeft">
+        <a href="https://www.facebook.com/"> <i class="topIcon fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.instagram.com/"> <i class="topIcon fa-brands fa-x-twitter"></i></a>
+        <a href="https://in.pinterest.com/search/pins/?q=car&rs=typed"><i class="topIcon fa-brands fa-pinterest"></i></a>
+        <a href="https://twitter.com/x"><i class="topIcon fa-brands fa-instagram"></i></a>
+        
+    </div>
+    <div class="topCenter">
+        <ul class="topList">
+            <li><a class="link" routerLink="/">Home</a></li>
+            <li><a class="link" routerLink="/about">About</a></li>
+            <li><a class="link" routerLink="#">Contact</a></li>
+            <li  *ngIf="Admin"><a class="link" routerLink="/adminControl">Admin Panel</a></li>
+        </ul>
+    </div>
+    <div class="topRight" >
+        <div *ngIf="(!Admin && ((user!==2) && (user!==1)))">
+            <a  routerLink="/login" class="login link">Login</a>
+        </div>
+        <div *ngIf="Admin">
+            <a   href="/" class="login link" (click)="setAdminValueIntoService(false)">Logout</a>
+        </div>
+        <div *ngIf="(user===2||user===1)">
+            <a   href="/" class="login link" (click)="setUserValueIntoService(0)">Logout</a>
+        </div>
+       
+
+         <!-- to show the my collection page of individual entity -->
+        <div *ngIf="(Admin || user==1 || user==2)">
+            <a routerLink="/setting"><img class="topImg"
+                src="https://cdsnz.co.nz/wp-content/uploads/2017/10/people_4-150x150@2x.jpg"
+                alt=""
+                /></a>
+        </div>
+       
+    </div>
+</div>
+
+

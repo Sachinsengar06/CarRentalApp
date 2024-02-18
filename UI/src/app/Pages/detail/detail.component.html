@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div  class="container" >
+    <div class="imgDiv">
+        <img [src]="posts.carImage" alt="">
+        <!-- https://wallpaperaccess.com/full/6363888.jpg -->
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1>{{posts.title}}</h1>
+        </div>
+        <div class="detail">
+            <p>{{posts.description}}</p>
+        </div >
+        <div class="btn" *ngIf="((user===1 || user===2) && !admin)">
+            <button routerLink="/rent/{{posts.id}}">Rent</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

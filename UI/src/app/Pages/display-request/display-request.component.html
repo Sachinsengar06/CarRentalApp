@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="display">
+    <div>
+        <h1>Requested To Return</h1>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <th>Cars</th>
+                <th>Dates</th>
+                <th>Button</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let x of detail">
+                    <td>
+                        <div>
+                            <img [src]="x.imgLink" alt="">
+                        </div>
+                        <div>
+                            <h4>{{x.title}}</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div>{{x.rentDate}}</div>
+                        <div>{{x.returnDate}}</div>
+
+                    </td>
+                    <td>
+                        <button (click)="approve(x.id)">Approve</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

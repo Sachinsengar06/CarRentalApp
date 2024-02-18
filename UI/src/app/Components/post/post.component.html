@@ -1,0 +1,46 @@
+<div  class="mainPost">
+    <div  class="posts" *ngFor="let post of posts" >
+        <a routerLink="/detail/{{post.id}}">
+            
+            <div class="post">
+                <div>
+                    <img [src]="post.carImage" alt="i">
+                    <script>
+                        console.log(post.price);
+                    </script>
+                </div>
+                <div class="postTitle">
+                    <h2>{{post.title}}</h2>
+                </div>
+                <div class="detail">
+                    <h4>Rented Price:{{post.price}}</h4>
+                    <h4>Available</h4>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- <div *ngIf="isSearch" class="mainPost">
+    <div  class="posts" *ngFor="let post of posts" >
+        <a routerLink="/detail/{{post.id}}">
+            
+            <div class="post">
+                <div>
+                    <img [src]="post.carImage" alt="i">
+                    <script>
+                        console.log(post.price);
+                    </script>
+                </div>
+                <div class="postTitle">
+                    <h2>{{post.title}}</h2>
+                </div>
+                <div class="detail">
+                    <h4>Rented Price:{{post.price}}</h4>
+                    <h4>Available</h4>
+                </div>
+            </div>
+        </a>
+    </div>
+</div> -->
+

@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="returnRequest">
+    <div class="image">
+        <img src="https://c4.wallpaperflare.com/wallpaper/710/724/953/jeep-wrangler-jeep-car-vehicle-wallpaper-preview.jpg" alt="">
+    </div>
+    <div class="main">
+        <div>
+            <button  class="back" routerLink="/setting">Back</button>
+        </div>
+        <form  #form="ngForm" >
+            <select class="dropDown"  name="outDamage" required [(ngModel)]="damageFormDetails.outDamage">
+              <option value="" disabled selected hidden >Outer Body Damage </option>
+              <option value="Minor Dents" >Minor Dents</option>
+              <option value="Major Dents">Major Dents</option>
+              <option value="Light Body Damage">Light Body Damage</option>
+              <option value="Severe Body Damage">Severe Body Damage</option>
+              <option value="No Damage">No Damage</option>
+            </select>
+          
+            <select class="dropDown" name="inDamage" [(ngModel)]="damageFormDetails.inDamage">
+              <option value="" style="color: rgb(189, 189, 183);font-style:italic;" disabled selected hidden>Interior Body Damage</option>
+              <option value="Scratches">Scratches</option>
+              <option value="Broken parts">Broken parts</option>
+              <option value="Ragged Seats">Ragged Seats</option>
+              <option value="No Damage">No Damage</option>
+            </select>
+          
+            <select class="dropDown" name="isWorking" [(ngModel)]="damageFormDetails.isWorking">
+              <option value="" disabled selected hidden>Car is in working condition</option>
+              <option value="Yes">Yes</option>
+              <option value=">No">No</option>
+              <option value="Can't Say">Can't Say</option>
+            </select>
+            <div class="btnSubmit">
+                <button type="submit" (click)="addCombindDataToDb()" class="btn" routerLink="/setting">Submit</button>
+            </div>
+          </form>
+          
+    </div>
+</div>

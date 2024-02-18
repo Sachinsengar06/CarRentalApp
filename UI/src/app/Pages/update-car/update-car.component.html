@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="addCar">
+    <div class="Video">
+        <video  type="video/mp4" src="../../../assets/videoflile/video2.mp4" muted loop autoplay></video>
+    </div>
+    <div class="main">
+        <div>
+            <button routerLink="/adminControl">Back</button>
+        </div>
+        <form  #form="ngForm" (ngSubmit)="updateCar()" >
+            <h1>Update Car</h1>
+                <input type="text" placeholder="CarImageLink" 
+                 name="carImage" [(ngModel)]="carDetail.carImage">
+
+                <input type="text" placeholder="Car Name"
+                name="title" [(ngModel)]="carDetail.title">
+
+                <input type="text" placeholder="Car Model"
+                name="model" [(ngModel)]="carDetail.model">
+
+                <input type="text" placeholder="Brand Name"
+                name="Brand" [(ngModel)]="carDetail.brand">
+
+                <input type="text" placeholder="Color"
+                name="Color" [(ngModel)]="carDetail.color">
+
+                <input type="text" placeholder="Price"
+                name="Price" [(ngModel)]="carDetail.price">
+
+                <textarea  placeholder="Description" 
+                name="description" [(ngModel)]="carDetail.description">
+                </textarea>
+                
+                <div class="btn">
+                    <button type="submit">Update</button>
+                </div>
+        </form>
+    </div>
+</div>

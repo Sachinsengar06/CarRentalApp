@@ -1,0 +1,86 @@
+.home{
+    margin-top: 45px;
+   
+}
+.bannerImg{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    z-index: 2;
+}
+img{
+    width: 94vw;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 20px;
+   
+}
+.text{
+    position:absolute;
+    top:20%;
+    right:35%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin-top: 20px;
+    font-size:5vw;
+}
+h2{
+    margin-top: 20px;
+    font-size:2.5vw;
+}
+h1,h2{
+    font-family:'Josefin Sans',sans-serif;
+   -webkit-text-stroke: 0.1vw white ;
+   color: transparent;
+   text-transform: uppercase;
+
+}
+.posts{
+    display:flex;
+    border:2px solid gold;
+    border-radius: 10px;
+    margin:5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:25px;
+}
+.searchDiv{
+ display:flex;
+ align-items: center;
+ position:absolute;
+ right:10%;
+ top:30px;
+ z-index:5;
+ border-bottom: 1.5px solid white;
+ 
+}
+.searchInput{
+    border:none;
+    outline: none;
+    background-color: transparent;
+    color:white;
+    font-size:15px;
+
+}
+input::placeholder{
+    color:rgb(235, 192, 192);
+    font-size: 15px;
+}
+.searchIcon{
+    color:white;
+}
+.SearchIcon{
+    color:white;
+    font-size: 8px;
+}
+.cross{
+    margin-right: 8px;
+}
+
+

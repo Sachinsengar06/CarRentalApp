@@ -1,0 +1,66 @@
+.returnRequest{
+margin-top: 40px;
+}
+.main{
+    position:absolute;
+    z-index: 4;
+    top:10%;
+    left:8%;
+    height: 80%;
+    width: 80%;
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+.image{
+ position:fixed;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+}
+form{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    box-shadow: 0 0 8px 2px;
+   
+}
+.dropDown{
+    margin-top: 50px;
+    width: 60%;
+    border:2px solid white;
+    height: 25px;
+    outline:none;
+    color:white;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 8px;
+    
+}
+.dropDown option{
+    color:black;
+    font-size: 13px;
+}
+.btnSubmit{
+    margin-top: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.btn{
+    width: 25%;
+    height: 35px;
+    border-radius: 15px;
+}
+.back{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,69 @@
+<div class="setting">
+    <div class="settingWrapper">
+      <div class="settingTitle">
+        <span class="settingUpdateTitle">Your Account</span>
+      </div>
+
+      <!-- //Profile picture -->
+      <form class="settingForm">
+        <label>Profile Picture</label>
+        <div class="settingPP">
+          <img 
+            src="https://cdsnz.co.nz/wp-content/uploads/2017/10/people_4-150x150@2x.jpg" 
+            alt=""
+          />
+
+          <!-- //if its admin then only this button is visible not for users -->
+          <div class="returnReq" *ngIf="(isadmin)">
+            <button class="returnReqBtn" routerLink="/display" >Return Request</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <app-header></app-header>
+  <div class="adminControl">
+    <div class="myHeadT">
+      <h1 class="myHead">My Collection</h1>
+    </div>
+    <table>
+        <thead>
+            <th>Cars</th>
+            <th>Dates</th>
+            <th>Retun</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let img of carImage" >
+                <td>
+                    <div class="imgDiv" >
+                        <a routerLink="/detail/{{img[4]}}">
+                            <img [src]="img[0]" alt="Image">
+                            <h3>{{img[1]}}</h3>
+                        </a>
+                    </div>
+                </td>
+                <div class="dates">
+                  <h5 >Book Date:{{img[2]}}</h5>
+                  <h5 >Book Date:{{img[3]}}</h5>
+                </div>
+                
+                <td *ngIf="(User!==0 && !isadmin)">
+                  <div *ngIf="(img[5]!==true)">
+                    <button (click)="passReturnReqObj(img)" routerLink="/return">Return</button>
+                  </div>
+                  <div *ngIf="(img[5]===true)">
+                    <button class="reqBtn"><em>Requested</em></button>
+                  </div>
+                </td>
+                
+                <td *ngIf="(isadmin)">
+                  <button (click)="deleteCarFromRent(img[6])" >Delete</button>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- //footer -->
+<app-footer></app-footer>

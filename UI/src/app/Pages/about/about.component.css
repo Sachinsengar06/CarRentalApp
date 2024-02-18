@@ -1,0 +1,44 @@
+.container{
+    margin-top: 40px;
+}
+button{
+    float:left;
+    margin-left:56px;
+    width:20%;
+    margin-top:20px;
+    height:30px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px;
+    border:none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Barlow', sans-serif;
+    cursor: pointer;
+}
+
+.imgDiv{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    margin-top: 20px;
+    object-fit:cover;
+    width:90Vw;
+    height: 70vh;
+    border-radius: 30px;
+}
+.title{
+    margin-left: 56px;
+    margin-top: 30px;
+    font-family: "Lora",sans-serif;
+    font-size: 25px;
+}
+.detail{
+    margin-left:56px;
+    margin-top: 20px;
+    font-family: "Varela",sans-serif;
+}
+h1{
+    font-size: 35px;
+}
